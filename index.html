@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Combustível</h1>
+    <form id="carForm">
+        <label for="nomeCarro">Nome do Carro:</label>
+        <input type="text" id="nomeCarro" required>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" required>
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" required>
+
+        <label for="kmCidade">Km/h na Cidade:</label>
+        <input type="number" id="kmCidade" required>
+
+        <label for="kmEstrada">Km/h na Estrada:</label>
+        <input type="number" id="kmEstrada" required>
+
+        <label for="tamanhoTanque">Tamanho do Tanque (L):</label>
+        <input type="number" id="tamanhoTanque" required>
+
+        <label for="distanciaTotal">Distância Total (Km):</label>
+        <input type="number" id="distanciaTotal" required>
+
+        <label>Tipo de Combustível:</label><br>
+        <input type="checkbox" id="gasolina" value="gasolina"> Gasolina<br>
+        <input type="checkbox" id="alcool" value="alcool"> Álcool<br>
+        <input type="checkbox" id="diesel" value="diesel"> Diesel<br><br>
+
+        <label for="precoGasolina">Preço da Gasolina (R$):</label>
+        <input type="number" id="precoGasolina" required>
+
+        <label for="precoAlcool">Preço do Álcool (R$):</label>
+        <input type="number" id="precoAlcool" required>
+
+        <label for="precoDiesel">Preço do Diesel (R$):</label>
+        <input type="number" id="precoDiesel" required>
+
+        <button /*type="submit"*/ onclick="calcular()">Calcular</button>
+    </form>
+
+    <h2 id="resultado"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
